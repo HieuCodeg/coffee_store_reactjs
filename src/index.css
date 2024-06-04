@@ -11,3 +11,29 @@
     @apply text-2xl;
   }
 }
+
+@layer utilities {
+  .wrapperBoard::-webkit-scrollbar {
+    width: 5px;
+  }
+  .wrapperBoard::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .wrapperBoard::-webkit-scrollbar-thumb {
+    background-color: rgb(165, 38, 6);
+    border-radius: 12px;
+    border-right: none;
+    border-left: none;
+  }
+
+  .wrapperBoard::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: auto;
+  }
+
+  .wrapperBoard::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 10px;
+  }
+}

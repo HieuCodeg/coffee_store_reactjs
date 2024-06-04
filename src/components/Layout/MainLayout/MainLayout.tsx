@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { Icon } from '@iconify/react';
 import { Typography } from '@material-tailwind/react';
 
@@ -8,8 +7,8 @@ export interface IMainLayoutProps {
 
 export function MainLayout({ children }: IMainLayoutProps) {
   return (
-    <div className="flex h-screen w-full flex-col bg-[#793939]">
-      <div className=" flex-1">{children}</div>
+    <div className="flex h-screen w-full flex-col overflow-hidden bg-[#793939]">
+      <div className="flex-1 overflow-hidden">{children}</div>
       <div className="flex h-[30px] w-full items-center justify-center gap-12 text-white">
         <div className="flex items-center gap-1">
           <Icon icon={'ic:baseline-phone-callback'} color="white" width={20} height={50} />

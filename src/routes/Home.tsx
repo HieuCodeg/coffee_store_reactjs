@@ -4,7 +4,6 @@ import { getUserInfo } from "../services/loginService";
 
 function Home() {
   const userInfor = getUserInfo();
-
   const navigate = useNavigate();
 
   useEffect(() => {

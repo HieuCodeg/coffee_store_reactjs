@@ -2,13 +2,13 @@ import axios from 'axios';
 import { UserSubmitForm } from '../pages/Login';
 import { API } from '../utils/api';
 import { configRequest } from './axiosClient';
-import { UserAuth } from '../models/common';
+import { IUserAuth } from '../models/common';
 
 export const loginStandard = async (data: UserSubmitForm) => {
   return axios.post(API.login, data);
 };
 
-export const saveUserInfo = (userInfo: UserAuth) => {
+export const saveUserInfo = (userInfo: IUserAuth) => {
   configRequest(userInfo.token);
   return localStorage.setItem('user_info', JSON.stringify(userInfo));
 };
