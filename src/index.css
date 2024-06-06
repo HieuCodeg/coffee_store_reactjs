@@ -13,6 +13,7 @@
 }
 
 @layer utilities {
+  /* custome scroll */
   .wrapperBoard::-webkit-scrollbar {
     width: 5px;
   }
@@ -35,5 +36,11 @@
   .wrapperBoard::-webkit-scrollbar-track-piece:start {
     background: transparent;
     margin-top: 10px;
+  }
+  /*  */
+  .no-wrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }

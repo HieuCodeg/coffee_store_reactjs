@@ -64,7 +64,7 @@ export function Cashier() {
         <div className="h-full w-3/5 overflow-hidden">
           <Manager />
         </div>
-        <div className="w-2/5">
+        <div className="h-full w-2/5 overflow-hidden">
           <Order />
         </div>
       </div>

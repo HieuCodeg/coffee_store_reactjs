@@ -155,7 +155,7 @@ export function Login() {
                     labelProps={{
                       className: 'hidden',
                     }}
-                    value={'Email hoặc mật khẩu không đúng! Vui lòng kiểm tra lại!'}
+                    value={errorForm}
                     containerProps={{ className: 'h-14' }}
                   />
                 )}

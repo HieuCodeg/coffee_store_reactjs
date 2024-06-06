@@ -5,11 +5,10 @@ export interface KitchenProps {}
 export function Kitchen(props: KitchenProps) {
   return (
     <>
-      <div className="w-2/3">
-        <Card>abc</Card>
-      </div>
-      <div className="w-1/3">
-        <Card>abc</Card>
+      {/* {isLoading && <Loading />} */}
+      <div className="flex h-full w-full gap-4 pl-4 pr-4 pt-1">
+        <div className="h-full w-3/5 overflow-hidden">abc</div>
+        <div className="h-full w-2/5 overflow-hidden">abcccc</div>
       </div>
     </>
   );

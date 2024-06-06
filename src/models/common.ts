@@ -25,12 +25,12 @@ export interface ICategory {
   title: string;
 }
 
-interface ISizeDetails {
+export interface ISizeDetails {
   name: string;
-  price: string;
+  price: number;
 }
 
-interface ISizes {
+export interface ISizes {
   [key: string]: ISizeDetails;
 }
 

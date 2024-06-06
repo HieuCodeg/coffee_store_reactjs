@@ -7,7 +7,7 @@ export interface IMainLayoutProps {
 
 export function MainLayout({ children }: IMainLayoutProps) {
   return (
-    <div className="flex h-screen w-full flex-col overflow-hidden bg-[#793939]">
+    <div className="bg-primary flex h-screen w-full flex-col overflow-hidden">
       <div className="flex-1 overflow-hidden">{children}</div>
       <div className="flex h-[30px] w-full items-center justify-center gap-12 text-white">
         <div className="flex items-center gap-1">

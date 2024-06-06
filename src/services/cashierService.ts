@@ -15,7 +15,9 @@ export const getListTable = async (): Promise<ITableItem[]> => {
 export const getListCategory = async (): Promise<ICategory[]> => {
   try {
     const response: AxiosResponse<ICategory[]> = await axiosClient.get<ICategory[]>(API.getListCategory);
-    return response.data;
+    const data = response.data;
+    data.unshift({ title: 'Tất cả', id: 0 });
+    return data;
   } catch (error) {
     throw new Error('Lỗi khi tải dữ liệu Danh mục');
   }
