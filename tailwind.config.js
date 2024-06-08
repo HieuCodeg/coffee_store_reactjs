@@ -7,6 +7,10 @@ export default withMT({
     extend: {
       colors: {
         "primary": "#793939",
+        "main-color": "#53382c",
+        "label-color": "#333333",
+        "highLight-color": "#b22830",
+        "disabled-color": "#919eabcc",
       },
     },
   },

@@ -36,7 +36,7 @@ export interface ISizes {
 
 export interface IProduct {
   id: number;
-  categoryId: string;
+  categoryId: string | number;
   description: string;
   photo: string;
   sizes: ISizes;

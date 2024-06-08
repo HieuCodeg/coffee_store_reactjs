@@ -2,9 +2,9 @@ import { Route, Routes } from 'react-router-dom';
 import { MainLayout } from '../components/Layout/MainLayout';
 import ProtectedComponent from '../components/ProtectedComponent';
 import { Cashier } from '../pages/Cashier';
+import { Kitchen } from '../pages/Kitchen';
 import { Login } from '../pages/Login';
 import Home from './Home';
-import { Kitchen } from '../pages/Kitchen';
 
 export function AppRoutes() {
   return (

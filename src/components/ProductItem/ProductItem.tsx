@@ -4,20 +4,23 @@ import { formatCurrencyToVND } from '../../utils/helper';
 
 export interface IProductItemProps {
   product: IProduct;
-  handleAddToCart?: (product: IProduct) => void;
+  handleAddToCart: (product: IProduct) => void;
 }
 
 export function ProductItem({ product, handleAddToCart }: IProductItemProps) {
   return (
-    <Card className="relative rounded-lg">
-      <div className="relative cursor-pointer pt-[100%]">
+    <Card className="relative h-fit rounded-lg">
+      <div className="relative cursor-pointer pt-[100%]" onClick={() => handleAddToCart(product)}>
         <img className="absolute top-0 h-full w-full object-cover" src={product.photo} alt={product.title} />
       </div>
       <div className="p-1 text-center">
-        <Typography className="no-wrap cursor-pointer text-sm font-bold uppercase hover:text-[#f14a50]">
+        <Typography
+          className="no-wrap cursor-pointer text-sm font-bold uppercase hover:text-[#f14a50]"
+          onClick={() => handleAddToCart(product)}
+        >
           {product.title}
         </Typography>
-        <div className="flex justify-between text-[#53382c]">
+        <div className="flex items-center justify-between text-[#53382c]">
           {Object.keys(product.sizes).length === 1 ? (
             <Typography>Giá</Typography>
           ) : (
